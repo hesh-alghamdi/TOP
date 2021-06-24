@@ -1,5 +1,2 @@
-# FreeCodeCamp - Responsive Web Design
-
-This branch is to list all the projects done for this chapter
-
-## 1- [Tribute Page](https://github.com/hesh-alghamdi/TOP/tree/1.1-tributePage)
+# Survey Page
+This project is focused on making a survey page with plain HTML and CSS. It is just a static page, not redirect or collection of data, YET :P
