@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- bootstrap 5.0.1 -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+		<link rel="stylesheet" href="style/style.css" />
+		<title>Survey Form</title>
+	</head>
+	<body>
+		<header>
+			<h1 class="h1" id="title">Survey for programmers</h1>
+			<p class="text-muted" id="description">Tell us all about you and what you do :)</p>
+		</header>
+		<main>
+			<form action="" id="survey-form">
+				<fieldset id="basic-info">
+					<legend>Basic Info</legend>
+					
+					<div>
+						<label class="form-label" for="name" id="name-label">Name</label>
+						<input
+						class="form-control"
+						type="text"
+						id="name"
+						type="text"
+						placeholder="Enter your name"
+						required
+						/>
+					</div>
+
+					<div>
+						<label class="form-label" for="email" id="email-label" required>E-mail</label>
+						<input
+						class="form-control"
+						type="email"
+						id="email"
+						placeholder="Enter you Email"
+						required
+						/>
+					</div>
+					
+					<div>
+						<label class="form-label" for="number" id="number-label">Age</label>
+						<input
+						class="form-control"
+						type="number"
+						name=""
+						id="number"
+						min="18"
+						max="68"
+						placeholder="age"
+						/>
+					</div>
+
+					<div>
+						<label class="form-label" for="dropdown" id="gender-label">Gender</label>
+						<select name="gender" class="form-select" id="dropdown" required>
+							<option value="" selected>--Choose--</option>
+							<option value="Male">Male</option>
+							<option value="Female">Female</option>
+						</select>
+					</div>
+					</fieldset>
+
+				<fieldset id="coding">
+					<legend>How many hours you spend coding daily ?</legend>
+					<div>
+						<input
+						class="form-check-input"
+							type="radio"
+							name="op"
+							id="op-1"
+							value="less_1_hour"
+						/>
+						<label class="form-check-label" class="form-label" for="op-1">Less than an hour </label>
+					</div>
+
+					<div>
+						<input class="form-check-input" type="radio" name="op" id="op-2" value="2_hours" />
+						<label class="form-check-label" class="form-label" for="op-2">2 hours </label>
+
+					<div>
+						<input class="form-check-input" type="radio" name="op" id="op-3" value="3_hours" />
+						<label class="form-check-label" class="form-label" for="op-3">3 hours </label>
+					</div>
+
+					<div>
+						<input
+						class="form-check-input"
+							type="radio"
+							name="op"
+							id="op-4"
+							value="more_3_hours"
+						/>
+						<label class="form-check-label" class="form-label" for="op-4">More than 3 hours </label>
+					</div>
+				</fieldset>
+
+				<fieldset id="skills">
+					<legend id="skill-q">What skills do you have ?</legend>
+					
+					<div>
+						<input class="form-check-input" type="checkbox" name="skill" id="programming" value="programming" />
+						<label class="form-check-label" class="form-label" for="programming"> Programming </label>
+					</div>
+					
+					<div>
+						<input class="form-check-input" type="checkbox" name="skill" id="speaking" value="public_speaker" />
+						<label class="form-check-label" class="form-label" for="speaking"> Public Speaking </label>
+					</div>
+
+					<div>
+						<input class="form-check-input" type="checkbox" name="skill" id="inventor" value="inventor" />
+						<label class="form-check-label" class="form-label" for="inventor"> Inventor </label>
+					</div>
+
+					<div>
+						<input class="form-check-input" type="checkbox" name="skill" id="solver" value="solver" />
+						<label class="form-check-label" class="form-label" for="solver"> Problem Solving </label>
+					</div>
+
+					<div>
+						<input class="form-check-input" type="checkbox" name="skill" id="leading" value="team_leader" />
+						<label class="form-check-label" class="form-label" for="leading"> Team Leader </label>
+					</div>
+				</fieldset>
+
+				<fieldset id="text">
+					<legend>What do you do in your free time ?</legend>
+					<textarea name="freetime-textarea" id="freetime" cols="30" rows="10" required></textarea>
+				</fieldset>
+
+				<input class="btn btn-primary" type="submit" value="Submit" id="submit" />
+			</form>
+		</main>
+	</body>
+</html>

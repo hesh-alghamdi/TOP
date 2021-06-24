@@ -1,0 +1,70 @@
+* {
+	border-radius: 6px;
+}
+
+body {
+	background-image: url(../media/coding-background.png);
+	background-color: #000837;
+	padding: 5% 30%;
+}
+
+main {
+	background-color: rgba(255, 255, 255, 0.712);
+}
+
+header {
+	text-align: center;
+	color: white;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	padding: 10px 15px;
+}
+
+fieldset {
+	margin: 10px 15px;
+	/* min-width: 230px; */
+}
+
+label {
+	align-self: left !important;
+	max-width: fit-content;
+}
+
+legend {
+	font-size: 1.3em;
+}
+
+#coding,
+#skills {
+	display: flex;
+	flex-direction: column;
+}
+
+#freetime {
+	width: 100%;
+}
+
+[type='submit'] {
+	width: 50%;
+	align-self: center;
+}
+
+@media (max-width: 900px) {
+	body {
+		padding: 20px 100px;
+	}
+	form {
+		padding: 10px 30px;
+	}
+}
+@media (max-width: 599px) {
+	body {
+		padding: 20px 15px;
+	}
+	form {
+		padding: 10px 15px;
+	}
+}
