@@ -1,0 +1,144 @@
+* {
+	scroll-behavior: smooth;
+}
+/* Navbar */
+
+#nav-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	font-size: 1.2em;
+}
+.logo {
+	width: 2em;
+}
+
+section {
+	margin: 0px 0;
+	padding: 20px 30px;
+	color: black;
+}
+
+/* Overview section */
+
+#overview {
+	margin-top: 3em;
+	height: fit-content;
+	display: grid;
+	grid-template-rows: 0.2fr 1fr;
+	grid-template-areas:
+		'text'
+		'video';
+	z-index: 1;
+}
+
+#description,
+#video-container {
+	width: 100%;
+}
+
+/* Video */
+
+#video {
+	border-radius: 6px;
+}
+
+/* Form */
+
+#form {
+	margin-top: 20px;
+	width: 100%;
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* Features */
+
+#features {
+	margin: 10px auto;
+}
+
+.feature-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.fa {
+	font-size: 3em;
+	margin-bottom: 0.5em;
+	color: cadetblue;
+	transition: all 0.1s ease-in;
+}
+
+.fa:hover {
+	color: coral;
+}
+
+h2 {
+	margin-bottom: 1.5em;
+}
+
+.feature-title {
+	text-align: center;
+}
+
+.feature-text {
+	text-align: justify;
+}
+
+/* Footer */
+
+#footer-list {
+	margin: auto;
+}
+
+#footer-list ul li {
+	margin-bottom: 10px;
+}
+
+#footer-list ul li a {
+	color: white;
+}
+
+#footer-list ul li a:hover {
+	color: orange;
+}
+
+#platforms {
+	text-align: center;
+}
+
+#platforms img {
+	width: 50%;
+}
+
+@media (max-width: 600px) {
+	#nav-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.logo {
+		width: 1.4em;
+	}
+	.navbar-brand {
+		align-self: center;
+		font-size: 1.5em;
+	}
+	.navbar-nav {
+		justify-content: center;
+	}
+
+	#overview {
+		margin-top: 7em;
+	}
+
+	footer {
+		padding: 2em 0;
+	}
+}

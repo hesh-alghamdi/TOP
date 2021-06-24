@@ -1,5 +1,6 @@
-# FreeCodeCamp - Responsive Web Design
+# Landing Page
 
-This branch is to list all the projects done for this chapter
+This project is about making a landing page for a product of any kind.
 
-## 1- [Tribute Page](https://github.com/hesh-alghamdi/TOP/tree/1.1-tributePage)
+- I used Bootstrap 4 for consistency and responsive design.
+- Responsive for all devices.
