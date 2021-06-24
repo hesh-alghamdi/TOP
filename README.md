@@ -1,1 +1,3 @@
-# This repository is make to be updated as I go through The Odin Project
+# FreeCodeCamp - Responsive Web Design
+
+This branch is to list all the projects done for this chapter
