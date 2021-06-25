@@ -1,7 +1,9 @@
-# FreeCodeCamp - Responsive Web Design
+# Technical Documentation
 
-This branch is to list all the projects done for this chapter
+This project is focused on layout and writing a documentation for a product of sorts.
 
-## 1. [Tribute Page](https://github.com/hesh-alghamdi/TOP/tree/1.1-tributePage)
-## 2. [Survey Page](https://github.com/hesh-alghamdi/TOP/tree/1.2-surveyPage)
-## 3. [Landing Page](https://github.com/hesh-alghamdi/TOP/tree/1.3-landingPage)
+I replacate [FCC documentation example](https://codepen.io/freeCodeCamp/full/NdrKKL) with some changes and tweaks.
+
+It's required that I define a lot of elements and use them in a speicific way, but I could've done different in that regard. For example, making the navbar sticky to the top of the screen or use JS to make it collapsable.
+
+This is just plain HTML and CSS.

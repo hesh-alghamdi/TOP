@@ -1,0 +1,147 @@
+* {
+	scroll-behavior: smooth;
+}
+
+header {
+	font-weight: bold;
+	font-size: 1.3em;
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+/* Navbar */
+
+#navbar {
+	position: fixed;
+	left: 0;
+	background-color: white;
+	display: grid;
+	grid-template-rows: max-content max-content;
+	grid-template-areas:
+		'header'
+		'list';
+	z-index: 100;
+}
+
+#navbar header {
+	text-align: center;
+	margin-top: 14px;
+	font-size: 2em;
+}
+
+#navbar ul {
+	padding-inline-start: 0;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	width: fit-content;
+	white-space: normal;
+	overflow-x: scroll;
+	padding: 20px 5px;
+	background-color: darkgrey;
+}
+
+#navbar ul li {
+	margin: 0 1em;
+	list-style-type: none;
+	border-right: 0;
+	width: fit-content;
+	white-space: nowrap;
+	margin-bottom: 30px;
+	font-size: 1.2em;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#navbar ul li::after {
+	background-color: white;
+}
+
+#navbar ul li a {
+	color: black;
+}
+
+/* CSS-Tricks for scrolling bar for overflowing nav links */
+
+#navbar ul::-webkit-scrollbar {
+	width: 0.5em;
+}
+
+#navbar ul::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+#navbar ul::-webkit-scrollbar-thumb {
+	background-color: rgb(0, 0, 0);
+	outline: 1px solid slategrey;
+}
+
+/* Documentation */
+
+#main-doc {
+	grid-area: body;
+	padding: 16px;
+	margin-left: 300px;
+}
+section {
+	margin: 3em 0;
+	padding: 0.5em;
+}
+
+p,
+article ul li {
+	font-size: 1.2em;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+article ul li ul li {
+	font-size: 1em;
+	margin: 10px;
+}
+
+code {
+	display: block;
+	text-align: left;
+	white-space: pre-line;
+	position: relative;
+	word-break: break-all;
+	word-wrap: normal;
+	line-height: 2;
+	background-color: #f7f7f7;
+	padding: 15px;
+	margin: 10px;
+	border-radius: 5px;
+	font-size: 1.1em;
+}
+
+@media (max-width: 680px) {
+	#navbar {
+		position: relative;
+		top: 0;
+	}
+
+	#navbar header {
+		padding: 1em;
+	}
+
+	#navbar ul {
+		flex-direction: column;
+		height: 5em;
+		width: 100%;
+		margin: auto;
+		padding: 10px;
+		align-items: left;
+		overflow-y: scroll;
+		overflow-x: hidden;
+	}
+	#navbar ul li {
+		margin-bottom: 10px;
+	}
+	#navbar ul::-webkit-scrollbar {
+		width: 0.3em;
+	}
+
+	#main-doc {
+		margin-top: 0;
+		margin-left: 0;
+	}
+}
