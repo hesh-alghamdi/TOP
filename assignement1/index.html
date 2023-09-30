@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="styles/reboot.css" />
+		<link rel="stylesheet" href="styles/style.css" />
+		<title>Sign-Up Form</title>
+	</head>
+	<body>
+		<div id="main-container">
+			<section id="nav-section">
+				<img src="./assets/odin-logo.svg" alt="Odin Logo" id="site-logo" />
+				<div id="nav-bg"></div>
+			</section>
+			<section id="form-section">
+				<p class="text-bold paragraph">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, ut
+					nihil a ratione non sequi eius beatae. Repudiandae quam voluptas enim
+					facere consequatur, architecto harum nostrum quasi culpa minus magnam!
+				</p>
+
+				<form action="https://httpbin.org/post" method="post">
+					<legend>Sign-Up From</legend>
+					<fieldset>
+						<div class="input-group">
+							<label for="first-name">First name</label
+							><input required type="text" name="first-name" id="first-name" />
+						</div>
+						<div class="input-group">
+							<label for="last-name">Last Name</label
+							><input required type="text" name="last-name" id="last-name" />
+						</div>
+
+						<div class="input-group">
+							<label for="email">Email</label
+							><input required type="email" name="email" id="email" />
+						</div>
+						<div class="input-group">
+							<label for="phone">Phone Number</label
+							><input required type="tel" min="10" name="phone" id="phone" />
+						</div>
+
+						<div class="input-group">
+							<label for="password">Password</label
+							><input required type="password" name="password" id="password" />
+						</div>
+						<div class="input-group">
+							<label for="confrim-password">Confirm Password</label
+							><input
+								required
+								type="password"
+								name="confrim-password"
+								id="confrim-password"
+							/>
+						</div>
+					</fieldset>
+					<div class="input-group">
+						<button>Submit</button>
+						<p>Already have an account? <a href="#">Sign-In</a></p>
+					</div>
+				</form>
+			</section>
+		</div>
+	</body>
+</html>
