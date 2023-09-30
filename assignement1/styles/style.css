@@ -70,7 +70,7 @@
 #form-section {
 	padding: 1.5em;
 	height: 100vh;
-	overflow-y: auto;
+/* 	overflow-y: auto; */
 }
 
 .input-group {
